@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Project name: CMSC335PROJECT2
+File name: Square.fxml
+Author: Timothy Eckart
+Date: 12 Nov 2024
+Purpose: FXML to prompts Square Shape and dimension drop down.
+-->
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shapes.SquareController">
+   <children>
+      <Label fx:id="squareLabel1" layoutX="90.0" layoutY="77.0" text="You Selected Square" textFill="#0d05f8">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="squareLabel2" layoutX="224.0" layoutY="149.0" text="Select Dimension:" textFill="#0808ff">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="squareChoiceBx" layoutX="226.0" layoutY="298.0" prefWidth="150.0" />
+      <Rectangle fx:id="squareDisplay" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="200.0" layoutX="201.0" layoutY="37.0" stroke="#00000004" strokeType="INSIDE" width="200.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Project name: CMSC335PROJECT2
+File name: Cylinder.fxml
+Author: Timothy Eckart
+Date: 12 Nov 2024
+Purpose: FXML to prompts Cylinder Shape and dimension drop down.
+-->
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Cylinder?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shapes.CylinderController">
+   <children>
+      <Label fx:id="cylinderLabel1" layoutX="78.0" layoutY="87.0" text="You Selected Cylinder" textFill="#0804f2">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="cylinderLabel2" layoutX="233.0" layoutY="160.0" text="Select Dimension:" textFill="#0716eb">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="cylinderHtChoiceBx" layoutX="78.0" layoutY="309.0" prefWidth="150.0" />
+      <Cylinder fx:id="cylinderDisplay" height="100" layoutX="281.0" layoutY="160.0" radius="20" visible="false" />
+      <ChoiceBox fx:id="cylinderRdChoiceBx" layoutX="368.0" layoutY="310.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Project name: CMSC335PROJECT2
+File name: Homepage.fxml
+Author: Timothy Eckart
+Date: 12 Nov 2024
+Purpose: FXML to prompts Homepage menu options for user selection of shapes.
+Once user selects shape button, they will be prompt with next Stage window.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shapes.Controller">
+   <children>
+      <Label layoutX="12.0" layoutY="46.0" prefHeight="78.0" prefWidth="577.0" text="Welcome to Shape Selection" textFill="#2531b0">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="168.0" layoutY="142.0" text="Please select from the menu below:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="circleButton" layoutX="35.0" layoutY="221.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Circle" onAction="#handleButton1Action"/>
+      <Button fx:id="squareButton" layoutX="168.0" layoutY="221.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Square" onAction="#handleButton3Action" />
+      <Button fx:id="sphereButton" layoutX="108.0" layoutY="266.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Sphere" onAction="#handleButton4Action"/>
+      <Button fx:id="rectangleButton" layoutX="433.0" layoutY="221.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Rectangle" onAction="#handleButton2Action"/>
+      <Button fx:id="triangleButton" layoutX="301.0" layoutY="221.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Triangle" onAction="#handleButton7Action"/>
+      <Button fx:id="cubeButton" layoutX="240.0" layoutY="266.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Cube" onAction="#handleButton5Action"/>
+      <Button fx:id="coneButton" layoutX="379.0" layoutY="266.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Cone" onAction="#handleButton8Action" />
+      <Button fx:id="cylinderButton" layoutX="161.0" layoutY="313.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Cylinder" onAction="#handleButton6Action"/>
+      <Button fx:id="torusButton" layoutX="319.0" layoutY="313.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Torus" onAction="#handleButton9Action"/>
+   </children>
+</AnchorPane>

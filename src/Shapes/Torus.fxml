@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Project name: CMSC335PROJECT2
+File name: Torus.fxml
+Author: Timothy Eckart
+Date: 12 Nov 2024
+Purpose: FXML to prompts Torus Shape and dimension drop down.
+-->
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.MeshView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shapes.TorusController">
+   <children>
+      <Label fx:id="torusLabel1" layoutX="104.0" layoutY="85.0" text="You Selected Torus" textFill="#0707ee">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="torusLabel2" layoutX="226.0" layoutY="177.0" text="Select Dimensions: " textFill="#0509e8">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="torusOutRdChoiceBx" layoutX="67.0" layoutY="307.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="torusInRdChoiceBx" layoutX="347.0" layoutY="308.0" prefWidth="150.0" />
+      <MeshView fx:id="torusDisplay" layoutX="288.0" layoutY="167.0" />
+   </children>
+</AnchorPane>

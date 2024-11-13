@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Project name: CMSC335PROJECT2
+File name: Rectangle.fxml
+Author: Timothy Eckart
+Date: 12 Nov 2024
+Purpose: FXML to prompts Rectangle Shape and dimension drop down.
+-->
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shapes.RectangleController">
+   <children>
+      <ChoiceBox fx:id="rectheightChoiceBx" layoutX="104.0" layoutY="271.0" prefWidth="150.0" />
+      <Label fx:id="rectangleLabel1" layoutX="36.0" layoutY="94.0" prefHeight="60.0" prefWidth="508.0" text="You Selected Rectangle" textFill="#080cee">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="rectangleLabel2" layoutX="215.0" layoutY="177.0" text="Select Dimension:" textFill="#063be8">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="rectangleDisplay" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="200.0" layoutX="147.0" layoutY="50.0" stroke="TRANSPARENT" strokeType="INSIDE" width="286.0" />
+      <ChoiceBox fx:id="rectWidthChoiceBx" layoutX="330.0" layoutY="271.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

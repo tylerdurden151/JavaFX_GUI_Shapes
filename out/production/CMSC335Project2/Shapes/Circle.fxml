@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Project name: CMSC335PROJECT2
+File name: Circle.fxml
+Author: Timothy Eckart
+Date: 12 Nov 2024
+Purpose: FXML to prompts Circle Shape and dimension drop down.
+-->
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shapes.CircleController">
+   <children>
+      <Label fx:id="circleLabel1" layoutX="107.0" layoutY="79.0" text="You selected Circle" textFill="#0f0ce8">
+
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="circleChoiceBx" layoutX="225.0" layoutY="200.0" prefWidth="150.0" />
+      <Label fx:id="circleLabel2" layoutX="233.0" layoutY="164.0" text="Select Dimension:" textFill="#081add">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Circle fx:id="circleDisplay" fill="#0088ff00" layoutX="300.0" layoutY="99.0" radius="65.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+   </children>
+</AnchorPane>
