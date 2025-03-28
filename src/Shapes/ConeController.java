@@ -1,4 +1,4 @@
-/* Project name: CMSC335PROJECT2
+/* Project name:
  * File name: ConeController.java
  * Author: Timothy Eckart
  * Date: 12 Nov 2024
